@@ -5,9 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.text-revealed{
+  visibility: hidden;
+}
+.text-hidden{  
+  animation-name: fade-in;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 100;}
 }
